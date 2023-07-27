@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Ignoring CSV files because they are huge and github doesn't like them
+*.csv
+
 # Distribution / packaging
 .Python
 build/
