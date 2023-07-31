@@ -109,10 +109,9 @@ In general, casual riders tend to ride electric bikes more often then they do cl
 
 Casual riders are also the only riders who use docked bikes.
 
-![Bike Type by Month](/analysis/bike_type_by_month.png)
-Looking at the bike types by month we see something strange. The trend seen above seems to hold true, however for the month of May and June usage of classic bikes increased dramatically, followed by a sharp increase in electric bikes in July, August, September and October.
-
-More investigation is needed to determine if this was an actual change in rider behavior or if there was some other explanation, such as a shortage of electric bikes.
-
 ### Where are Users Riding?
+
+By cross referencing the starting latitude and longitude of each ride, we can determine which neighborhoods a ride took place.
+
+The graphic below shows a count of how many rides took place in each neighborhood of Chicago:
 
