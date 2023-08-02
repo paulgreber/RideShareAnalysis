@@ -13,11 +13,11 @@ Cyclistic's marketing team want to create a marketing campaign designed to conve
 
 Before the marketing campaign can be started trends need to be identified in Cyclistic's historical bike trip data.
 
-## Ask
+## Objective
 
 Cyclistic intends to create a marketing campaign designed to convert casual riders into annual members. To be able to do this effectively, historical bike trip data needs to be analyzed to determine any difference in how casual riders differ from annual members.
 
-## Prepare
+## Preparation
 
 ### Data Source
 
@@ -41,7 +41,7 @@ What the data does contain is information related to:
 
 Based on this it appears that there will be many elements of the data that can be examined to determine what differences exist between casual riders and annual members.
 
-## Process
+## Data Processing
 
 ### Tools Used
 
@@ -71,7 +71,7 @@ This translation was done by acquiring a [Shapefile](https://en.wikipedia.org/wi
 
 The data from the shapefile was then joined with the data from our main dataset, resulting in our main dataset containing the neighborhoods that each starting latitude and longitude existed in.
 
-## Analyze
+## Analysis
 
 Analysis will attempt to answer the following questions:
 
@@ -113,5 +113,104 @@ Casual riders are also the only riders who use docked bikes.
 
 By cross referencing the starting latitude and longitude of each ride, we can determine which neighborhoods a ride took place.
 
-The graphic below shows a count of how many rides took place in each neighborhood of Chicago:
+Below is a summary of the top 10 neighborhoods favored by all member types.
 
+![Neighborhoods by All Member Types](/analysis/neighborhoods_by_all.png)
+
+| Neighborhood      | Total Number of Riders |
+|-------------------|-----------------------:|
+| River North       |                 512118 |
+| Lincoln Park      |                 493069 |
+| Loop              |                 469775 |
+| Lake View         |                 465804 |
+| West Loop         |                 416402 |
+| Streeterville     |                 273027 |
+| Little Italy, UIC |                 205535 |
+| West Town         |                 192760 |
+| Uptown            |                 192334 |
+| Hyde Park         |                 187048 |
+
+Additionally, the breakdown of annual members and casual riders is as follows:
+
+![Neighborhoods by Annual Members](/analysis/neighborhoods_by_member.png)
+
+| Neighborhood      | Member Riders | Casual Riders | Total Number of Riders |
+|-------------------|--------------:|--------------:|-----------------------:|
+| River North       |        333971 |        178147 |                 512118 |
+| West Loop         |        287350 |        129052 |                 416402 |
+| Lincoln Park      |        275832 |        217237 |                 493069 |
+| Lake View         |        273894 |        191910 |                 465804 |
+| Loop              |        270927 |        198848 |                 469775 |
+| Little Italy, UIC |        163382 |         42153 |                 205535 |
+| Hyde Park         |        140057 |         46991 |                 187048 |
+| Streeterville     |        130714 |        142313 |                 273027 |
+| West Town         |        122512 |         70248 |                 192760 |
+| Uptown            |        115989 |         76345 |                 192334 |
+
+![Neighborhoods by Casual Riders](/analysis/neighborhoods_by_casual.png)
+
+| Neighborhood  | Member Riders | Casual Riders | Total Number of Riders |
+|---------------|--------------:|--------------:|-----------------------:|
+| Lincoln Park  |        275832 |        217237 |                 493069 |
+| Loop          |        270927 |        198848 |                 469775 |
+| Lake View     |        273894 |        191910 |                 465804 |
+| River North   |        333971 |        178147 |                 512118 |
+| Streeterville |        130714 |        142313 |                 273027 |
+| West Loop     |        287350 |        129052 |                 416402 |
+| Uptown        |        115989 |         76345 |                 192334 |
+| Old Town      |         98929 |         75899 |                 174828 |
+| West Town     |        122512 |         70248 |                 192760 |
+| Logan Square  |         78771 |         64315 |                 143086 |
+
+At first glance it may seem like there is no difference, that casual riders and those with annual memberships tend to ride in the same areas, however upon closer inspection we can see that certain neighborhoods are favored more by annual members and some by casual riders. For example Steeterville is popular among both groups, but casual riders tend to ride there more than annual members.
+
+By calculating and graphing the differences between these groups we should be able to identify trends in riding behavior.
+
+![Neighborhoods More Annual Members](/analysis/neighborhoods_by_more_annual.png)
+
+| Neighborhood      | Member Riders | Casual Riders | Difference |
+|-------------------|--------------:|--------------:|-----------:|
+| West Loop         | 287350        | 129052        | 158298     |
+| River North       | 333971        | 178147        | 155824     |
+| Little Italy, UIC | 163382        | 42153         | 121229     |
+| Hyde Park         | 140057        | 46991         | 93066      |
+| Lake View         | 273894        | 191910        | 81984      |
+
+
+![Neighborhoods more Casual Riders](/analysis/neighborhoods_by_more_casual.png)
+
+| Neighborhood   | Member Riders | Casual Riders | Difference |
+|----------------|--------------:|--------------:|-----------:|
+| Museum Campus  | 18008         | 45370         | 27362      |
+| Grant Park     | 32255         | 47651         | 15396      |
+| Millenium Park | 12754         | 28004         | 15250      |
+| Streeterville  | 130714        | 142313        | 11599      |
+| Gage Park      | 2148          | 4849          | 2701       |
+
+The areas with more annual members than casual riders tends to be more urban areas, while the areas with more casual riders than annual members tend to be areas with parks and other recreational attractions.
+
+## Summary
+
+From our analysis, we can make the following observations:
+
+Annual Members:
+
+* More often to ride during the week than the weekend.
+* A significant number of riders ride during the winter.
+* Take shorter rides than casual riders.
+* Ride at equal frequency at morning or during the evening.
+* Have no real preference for electric bikes or classical peddle bikes.
+* Are more likely to ride in urban areas than casual riders.
+
+Casual Riders:
+
+* More likely to ride during the weekend.
+* Unlikely to ride during the winter, preferring to ride during the warmer months.
+* Takes longer rides than casual riders.
+* Do not ride in the morning as often as they do in the evening.
+* Prefer electric bikes over classic peddle bikes.
+* Are more likely to ride in areas with parks or other recreational areas than annual members.
+
+## Conclusion
+
+There seems to be a trend for annual members to use Cyclistic
