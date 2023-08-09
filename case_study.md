@@ -87,17 +87,21 @@ But before we begin, let's look at how many riders there are:
 ### When are Users Riding?
 
 ![Rider Count by Month](/analysis/rider_each_month.png)
+
 The number of riders is lowest during the colder months and higher during the warm months. However during cold months, riders with an annual membership is still much higher than casual riders. But during the warm month (summer in particular) the number of casual riders increases to be almost equal with that the riders with annual memberships.
 
 ![Rider Count by Day of Week](/analysis/rider_day_of_week.png)
+
 Riders with annual memberships is highest during the week, while casual riders is highest during the weekends.
 
 ![Rider Count by Time of Day](/analysis/rider_time_of_day.png)
+
 All riders tend to ride most often in the afternoon and least often at night.
 
 Casual riders tend to ride more in the evening than they do in the morning, while riders with annual memberships tend to ride as often in the mornings as they do in the evenings.
 
 ![Ride Duration](/analysis/ride_duration.png)
+
 *Note that this plot is made with all outlying data removed*
 
 On average, casual riders take slightly longer rides than riders with annual memberships.
@@ -105,6 +109,7 @@ On average, casual riders take slightly longer rides than riders with annual mem
 ### What are Users Riding?
 
 ![Bike Type by Membership](/analysis/bike_type_by_membership.png)
+
 In general, casual riders tend to ride electric bikes more often then they do classical peddle bikes. Whereas annual members ride either bike at almost equal numbers.
 
 Casual riders are also the only riders who use docked bikes.
@@ -213,4 +218,18 @@ Casual Riders:
 
 ## Conclusion
 
-There seems to be a trend for annual members to use Cyclistic
+There seems to be a trend for annual members to use Cyclistic bikes for their daily work commute. This is shown by their preference for using the bike during the week as opposed to the weekend, to more often use the bike in the winter than casual riders and are more likely to ride urban areas.
+
+Alternatively, casual riders appear to use Cyclistic bikes for recreation. This is shown by preferring to ride during the weekend, during the warm summer months, and in areas with parks.
+
+## Action to Take
+
+To convert casual riders to annual members, a marketing campaign designed to attract people who use Cyclistic for recreational purposes could be affective. Possibly by targeting advertisements during the time of year when casual riders are more likely to be active and in areas where casual riders tend to ride.
+
+Casual riders also prefer to ride electric bikes. A promotion offering exclusive access to electric bikes to annual members or other incentives related to electric bikes could be a good way to convert casual riders to annual members.
+
+## Future Analysis
+
+Our findings could be further enhanced by obtaining personal information on the riders themselves. Being able to determine if a user is a resident of Chicago or a tourist could be very useful information. A tourist who only uses Cyclistic while visiting is unlikely to sign up for an annual membership, so those users should be filtered out of our analysis.
+
+By being able to identify which rides are taken by which users, we can better determine what "kind of riders" use Cyclistic services. For example, recreational areas are not exclusive to casual riders, many annual members also ride in those areas as well. By being able to identify a trends by users, we can get a better idea as to how Cyclistic bikes are being used by casual riders.
