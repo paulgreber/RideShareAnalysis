@@ -1,21 +1,30 @@
 # Case Study - Cyclistic Ride Share Data
 
-Cyclistic is a bike-share service operating a fleet of 5842 bicycles across 692 stations across Chicago.
+This document is created as part of the Google Data Analytics Professional Certificate’s Capstone Project. The purpose of this project is to demonstrate all the skills learned during the program and put them to use performing data analysis in a way that can be showcased as part of a portfolio of our accomplishments.
+
+## Background
+
+Cyclistic is a bike-share service operating a fleet of 5842 bicycles across 692 stations in Chicago.
 
 Cyclistic categorized their riders in one of two categories:
 
-* Casual riders who use single-ride passes or full-day passes
-* Riders with annual memberships.
+Casual riders who use single-ride passes or full-day passes
+Riders with annual memberships.
 
-Cyclistic's financial analysts have concluded that annual members are more profitable than casual riders.
+Cyclistic's financial analysts have concluded that annual members are more profitable than casual riders. As a result, the marketing team wants to create a marketing campaign designed to convert casual riders into annual members.
 
-Cyclistic's marketing team want to create a marketing campaign designed to convert casual riders into annual members.
-
-Before the marketing campaign can be started trends need to be identified in Cyclistic's historical bike trip data.
+However, before the marketing campaign can be started, trends need to be identified in Cyclistic's historical bike trip data.
 
 ## Objective
 
-Cyclistic intends to create a marketing campaign designed to convert casual riders into annual members. To be able to do this effectively, historical bike trip data needs to be analyzed to determine any difference in how casual riders differ from annual members.
+Cyclistic intends to create a marketing campaign designed to convert casual riders into annual members.
+
+To be able to do this effectively, the following actions will be performed:
+
+* Historical bike trip data will be analyzed.
+* Difference between casual riders and annual members need to be found.
+* Trends in how casual riders and annual members use Cyclistic will be identified.
+* Suggestions will be provided to the marketing team on how to use this information.
 
 ## Preparation
 
@@ -122,7 +131,7 @@ Below is a summary of the top 10 neighborhoods favored by all member types.
 
 ![Neighborhoods by All Member Types](/analysis/neighborhoods_by_all.png)
 
-| Neighborhood      | Total Number of Riders |
+| Neighborhood      | Total Number of Rides  |
 |-------------------|-----------------------:|
 | River North       |                 512118 |
 | Lincoln Park      |                 493069 |
@@ -139,7 +148,7 @@ Additionally, the breakdown of annual members and casual riders is as follows:
 
 ![Neighborhoods by Annual Members](/analysis/neighborhoods_by_member.png)
 
-| Neighborhood      | Member Riders | Casual Riders | Total Number of Riders |
+| Neighborhood      | Member Rides  | Casual Rides  | Total Number of Rides  |
 |-------------------|--------------:|--------------:|-----------------------:|
 | River North       |        333971 |        178147 |                 512118 |
 | West Loop         |        287350 |        129052 |                 416402 |
@@ -154,7 +163,7 @@ Additionally, the breakdown of annual members and casual riders is as follows:
 
 ![Neighborhoods by Casual Riders](/analysis/neighborhoods_by_casual.png)
 
-| Neighborhood  | Member Riders | Casual Riders | Total Number of Riders |
+| Neighborhood  | Member Rides  | Casual Rides  | Total Number of Rides  |
 |---------------|--------------:|--------------:|-----------------------:|
 | Lincoln Park  |        275832 |        217237 |                 493069 |
 | Loop          |        270927 |        198848 |                 469775 |
@@ -173,7 +182,7 @@ By calculating and graphing the differences between these groups we should be ab
 
 ![Neighborhoods More Annual Members](/analysis/neighborhoods_by_more_annual.png)
 
-| Neighborhood      | Member Riders | Casual Riders | Difference |
+| Neighborhood      | Member Rides  | Casual Rides  | Difference |
 |-------------------|--------------:|--------------:|-----------:|
 | West Loop         | 287350        | 129052        | 158298     |
 | River North       | 333971        | 178147        | 155824     |
@@ -184,7 +193,7 @@ By calculating and graphing the differences between these groups we should be ab
 
 ![Neighborhoods more Casual Riders](/analysis/neighborhoods_by_more_casual.png)
 
-| Neighborhood   | Member Riders | Casual Riders | Difference |
+| Neighborhood   | Member Rides  | Casual Rides  | Difference |
 |----------------|--------------:|--------------:|-----------:|
 | Museum Campus  | 18008         | 45370         | 27362      |
 | Grant Park     | 32255         | 47651         | 15396      |
