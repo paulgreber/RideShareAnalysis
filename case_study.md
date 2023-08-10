@@ -8,8 +8,8 @@ Cyclistic is a bike-share service operating a fleet of 5842 bicycles across 692 
 
 Cyclistic categorized their riders in one of two categories:
 
-Casual riders who use single-ride passes or full-day passes
-Riders with annual memberships.
+* Casual riders who use single-ride passes or full-day passes
+* Riders with annual memberships.
 
 Cyclistic's financial analysts have concluded that annual members are more profitable than casual riders. As a result, the marketing team wants to create a marketing campaign designed to convert casual riders into annual members.
 
